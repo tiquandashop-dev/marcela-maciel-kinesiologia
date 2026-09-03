@@ -24,7 +24,7 @@ export default function MarcelaMacielPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f9fcfb] text-[#19384a]">
       <header className="absolute inset-x-0 top-0 z-20">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8">
+        <nav className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-y-4 px-5 py-5 lg:px-8">
           <Link href="#inicio" className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-[#19384a] text-white">
               <HeartPulse size={19} />
@@ -38,14 +38,22 @@ export default function MarcelaMacielPage() {
             <Link href="#sobre-mi">Sobre mí</Link>
             <Link href="#opiniones">Opiniones</Link>
           </div>
-          <a
-            href={marcela.whatsapp}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#2ca887] px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-[#2ca887]/20 hover:bg-[#218d7a]"
-          >
-            Consultar turno <ArrowUpRight size={16} />
-          </a>
+          <div className="flex w-full items-center gap-2 sm:w-auto">
+            <Link
+              href="/admin"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-[#c9e1df] bg-white/75 px-3 py-2.5 text-sm font-bold text-[#466877] hover:bg-white sm:flex-none"
+            >
+              <ShieldCheck size={16} /> Dashboard
+            </Link>
+            <a
+              href={marcela.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-[#2ca887] px-3 py-2.5 text-sm font-bold text-white shadow-lg shadow-[#2ca887]/20 hover:bg-[#218d7a] sm:flex-none sm:px-4"
+            >
+              Consultar turno <ArrowUpRight size={16} />
+            </a>
+          </div>
         </nav>
       </header>
       <section id="inicio" className="relative bg-[#e8f5f2] pt-32">
