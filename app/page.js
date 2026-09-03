@@ -237,7 +237,7 @@ export default function MarcelaMacielPage() {
         </div>
       </section>
       <section className="bg-white py-20">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-10 px-5 lg:flex-row lg:items-center lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[.8fr_1.2fr] lg:items-center lg:px-8">
           <div>
             <p className="section-label">Dónde encontrarme</p>
             <h2 className="mt-3 text-3xl font-extrabold">
@@ -250,7 +250,7 @@ export default function MarcelaMacielPage() {
               Turnos coordinados previamente
             </p>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 lg:col-start-1 lg:row-start-2">
             <Link href="/admin" className="inline-flex items-center gap-2 rounded-lg border border-[#c9e1df] bg-white/70 px-3 py-2.5 text-sm font-bold text-[#466877] hover:bg-white">
               <ShieldCheck size={16} /> Dashboard
             </Link>
@@ -272,6 +272,15 @@ export default function MarcelaMacielPage() {
               <MessageCircle size={16} />
               Escribir por WhatsApp
             </a>
+          </div>
+          <div className="relative min-h-[280px] overflow-hidden rounded-2xl border border-[#dcebe7] bg-[#e8f5f2] shadow-soft sm:min-h-[360px] lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:min-h-[400px]">
+            <iframe
+              title="Ubicación de ReKiMM Kinesiología"
+              src="https://www.google.com/maps?q=Peru+1306+Florida+Oeste+Buenos+Aires&output=embed"
+              className="absolute inset-0 h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </section>
