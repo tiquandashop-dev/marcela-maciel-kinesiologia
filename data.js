@@ -29,3 +29,14 @@ export const timeline = [
   ['2017 — 2019', 'Especialidad en Kinesiología en Ortopedia y Traumatología · COKIBA / UBA'],
   ['2022 — 2023', 'Formación en rehabilitación de la articulación temporomandibular · AAK / Hospital Houssay'],
 ];
+export const clinic = {
+  name: marcela.name,
+  professional: marcela.name,
+  specialty: marcela.specialty,
+  deposit: 5000,
+};
+
+export const demoBookings = [
+  { id: 1, patient: 'Paciente de ejemplo', professional: marcela.name, specialty: marcela.specialty, date: '18 Sep 2024', time: '09:30', paid: true, initials: 'PE', color: 'bg-[#e4f6ef] text-[#258e76]' },
+  { id: 2, patient: 'Otra persona', professional: marcela.name, specialty: marcela.specialty, date: '18 Sep 2024', time: '11:00', paid: false, initials: 'OP', color: 'bg-[#fff2dc] text-[#be7d1a]' },
+];
